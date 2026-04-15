@@ -92,7 +92,7 @@ def process_file(uploaded_bytes: bytes, file_name: str):
         detrended_xyz[f"{base}_Y"] = dy
         detrended_xyz[f"{base}_Z"] = dz
 
-        dist = np.sqrt(dx**2 + dy**2 + dz**2)
+        dist = np.sqrt(dx**2 + dy**2)
         resultantes[base] = dist
 
         stats_rows.append({
